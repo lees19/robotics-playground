@@ -27,8 +27,8 @@ CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /home/sunny/robotics/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_c/turtlebot3_msgs/msg/detail/sensor_state__type_support.h \
  /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+ /home/sunny/robotics/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_c/turtlebot3_msgs/msg/detail/sensor_state__type_support.h \
  /home/sunny/robotics/turtlebot3_ws/build/turtlebot3_msgs/rosidl_generator_c/turtlebot3_msgs/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h \

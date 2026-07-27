@@ -1,0 +1,10 @@
+[project]
+name = "turtlebot3-ws"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "scipy>=1.18.0",
+    "setuptools>=83.0.0",
+]

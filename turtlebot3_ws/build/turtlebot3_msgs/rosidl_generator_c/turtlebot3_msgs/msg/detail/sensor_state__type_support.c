@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "turtlebot3_msgs/msg/detail/sensor_state__struct.h"
-#include "turtlebot3_msgs/msg/detail/sensor_state__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "turtlebot3_msgs/msg/detail/sensor_state__type_support.h"
 #include "turtlebot3_msgs/msg/detail/sensor_state__functions.h"
 
 #ifdef __cplusplus

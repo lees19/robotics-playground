@@ -1,0 +1,2 @@
+[console_scripts]
+slam_node = slam.slam_node:main

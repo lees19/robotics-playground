@@ -1,0 +1,17 @@
+[1.152s] Invoking command in '/home/sunny/robotics/turtlebot3_ws/build/slam': PYTHONPATH=/home/sunny/robotics/turtlebot3_ws/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunny/robotics/turtlebot3_ws/install/slam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sunny/robotics/turtlebot3_ws/build/slam/build --no-deps symlink_data
+[1.368s] running develop
+[1.505s] running egg_info
+[1.523s] writing slam.egg-info/PKG-INFO
+[1.523s] writing dependency_links to slam.egg-info/dependency_links.txt
+[1.524s] writing entry points to slam.egg-info/entry_points.txt
+[1.524s] writing requirements to slam.egg-info/requires.txt
+[1.524s] writing top-level names to slam.egg-info/top_level.txt
+[1.561s] reading manifest file 'slam.egg-info/SOURCES.txt'
+[1.561s] writing manifest file 'slam.egg-info/SOURCES.txt'
+[1.575s] running build_ext
+[1.575s] Creating /home/sunny/robotics/turtlebot3_ws/install/slam/lib/python3.12/site-packages/slam.egg-link (link to .)
+[1.575s] Installing slam_node script to /home/sunny/robotics/turtlebot3_ws/install/slam/lib/slam
+[1.575s] 
+[1.576s] Installed /home/sunny/robotics/turtlebot3_ws/build/slam
+[1.576s] running symlink_data
+[1.599s] Invoked command in '/home/sunny/robotics/turtlebot3_ws/build/slam' returned '0': PYTHONPATH=/home/sunny/robotics/turtlebot3_ws/build/slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunny/robotics/turtlebot3_ws/install/slam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sunny/robotics/turtlebot3_ws/build/slam/build --no-deps symlink_data

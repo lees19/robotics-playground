@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "turtlebot3_msgs/msg/detail/sound__struct.h"
 #include "turtlebot3_msgs/msg/detail/sound__functions.h"
+#include "turtlebot3_msgs/msg/detail/sound__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "turtlebot3_msgs/msg/detail/sound__type_support.h"
 
