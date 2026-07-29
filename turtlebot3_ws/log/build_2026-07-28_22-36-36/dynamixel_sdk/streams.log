@@ -1,0 +1,245 @@
+[0.034s] Invoking command in '/home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake /home/sunny/robotics/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk
+[0.216s] -- The C compiler identification is GNU 13.3.0
+[0.813s] -- The CXX compiler identification is GNU 13.3.0
+[1.252s] -- Detecting C compiler ABI info
+[1.535s] -- Detecting C compiler ABI info - done
+[1.541s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.541s] -- Detecting C compile features
+[1.541s] -- Detecting C compile features - done
+[1.632s] -- Detecting CXX compiler ABI info
+[1.871s] -- Detecting CXX compiler ABI info - done
+[1.878s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.879s] -- Detecting CXX compile features
+[1.879s] -- Detecting CXX compile features - done
+[1.882s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.012s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.077s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.346s] -- Configuring done (2.3s)
+[2.354s] -- Generating done (0.0s)
+[2.356s] -- Build files have been written to: /home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk
+[2.360s] Invoked command in '/home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake /home/sunny/robotics/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk
+[2.361s] Invoking command in '/home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake --build /home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk -- -j20 -l20
+[2.397s] [  5%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.o[0m
+[2.398s] [ 11%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.o[0m
+[2.398s] [ 16%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.o[0m
+[2.404s] [ 22%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o[0m
+[2.404s] [ 27%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_bulk_read.cpp.o[0m
+[2.404s] [ 33%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_sync_read.cpp.o[0m
+[2.410s] [ 33%] Built target ament_cmake_python_symlink_dynamixel_sdk
+[2.411s] [ 38%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o[0m
+[2.411s] [ 44%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/control_table.cpp.o[0m
+[2.411s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_handler.cpp.o[0m
+[2.411s] [ 55%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o[0m
+[2.411s] [ 61%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/dynamixel_error.cpp.o[0m
+[2.411s] [ 66%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.o[0m
+[2.416s] [ 72%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o[0m
+[2.416s] [ 72%] Built target ament_cmake_python_symlink_dynamixel_easy_sdk
+[2.416s] [ 77%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/connector.cpp.o[0m
+[2.416s] [ 88%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/motor.cpp.o[0m
+[2.416s] [ 88%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/group_executor.cpp.o[0m
+[2.416s] [ 94%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o[0m
+[2.792s] running egg_info
+[2.796s] creating dynamixel_sdk.egg-info
+[2.808s] running egg_info
+[2.809s] creating dynamixel_easy_sdk.egg-info
+[2.826s] writing dynamixel_sdk.egg-info/PKG-INFO
+[2.827s] writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+[2.827s] writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+[2.827s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[2.840s] writing dynamixel_easy_sdk.egg-info/PKG-INFO
+[2.840s] writing dependency_links to dynamixel_easy_sdk.egg-info/dependency_links.txt
+[2.841s] writing top-level names to dynamixel_easy_sdk.egg-info/top_level.txt
+[2.841s] writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[2.901s] reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[2.901s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[2.915s] reading manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[2.915s] writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[2.941s] [ 94%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+[2.946s] [ 94%] Built target ament_cmake_python_build_dynamixel_easy_sdk_egg
+[3.431s] [100%] [32m[1mLinking CXX shared library libdynamixel_sdk.so[0m
+[3.606s] [100%] Built target dynamixel_sdk
+[3.613s] Invoked command in '/home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake --build /home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk -- -j20 -l20
+[3.615s] Invoking command in '/home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake --install /home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk
+[3.621s] -- Install configuration: ""
+[3.621s] -- Execute custom install script
+[3.622s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/connector.hpp
+[3.628s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/control_table.hpp
+[3.633s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/data_types.hpp
+[3.639s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_easy_sdk.hpp
+[3.645s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_error.hpp
+[3.652s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/group_executor.hpp
+[3.659s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/motor.hpp
+[3.665s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[3.671s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[3.678s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[3.685s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h
+[3.691s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h
+[3.699s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h
+[3.705s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[3.711s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[3.718s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[3.724s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[3.730s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[3.735s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[3.742s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[3.749s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[3.755s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[3.761s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[3.768s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xc430_w250.model
+[3.773s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xl430_w250.model
+[3.779s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/dynamixel.model
+[3.785s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h42_20_s300_ra.model
+[3.791s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_100_s500_ra.model
+[3.797s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_200_s500_ra.model
+[3.803s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m42_10_s260_ra.model
+[3.808s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_40_s250_ra.model
+[3.815s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_60_s250_ra.model
+[3.821s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_106.model
+[3.830s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_28.model
+[3.837s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_64.model
+[3.843s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph42_020_s300.model
+[3.849s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_100_s500.model
+[3.855s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_200_s500.model
+[3.862s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm42_010_s260.model
+[3.868s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_040_s250.model
+[3.874s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_060_s250.model
+[3.879s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/rh_p12_rn.model
+[3.885s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181.model
+[3.891s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181_fw52.model
+[3.897s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288.model
+[3.903s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288_fw52.model
+[3.910s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181.model
+[3.918s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181_fw52.model
+[3.923s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288.model
+[3.930s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288_fw52.model
+[3.936s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w150.model
+[3.942s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w240.model
+[3.949s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t210.model
+[3.955s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t350.model
+[3.962s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t150.model
+[3.969s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t270.model
+[3.976s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v210.model
+[3.981s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v350.model
+[3.989s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w210.model
+[3.995s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w350.model
+[4.002s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v150.model
+[4.009s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v270.model
+[4.016s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w150.model
+[4.022s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w270.model
+[4.028s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl320.model
+[4.034s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077.model
+[4.040s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077_fw52.model
+[4.047s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288.model
+[4.054s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288_fw52.model
+[4.060s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl430_w250.model
+[4.067s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w210.model
+[4.074s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w350.model
+[4.080s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w150.model
+[4.086s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w270.model
+[4.094s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t200.model
+[4.100s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t333.model
+[4.107s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_h260.model
+[4.113s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t140.model
+[4.119s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t260.model
+[4.125s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a051.model
+[4.131s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a099.model
+[4.138s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_b001.model
+[4.144s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_m001.model
+[4.150s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r051.model
+[4.157s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r099.model
+[4.162s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a051.model
+[4.169s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a099.model
+[4.175s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_b001.model
+[4.182s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_m001.model
+[4.188s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r051.model
+[4.194s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r099.model
+[4.200s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh
+[4.206s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv
+[4.212s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/PKG-INFO
+[4.218s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/SOURCES.txt
+[4.224s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/dependency_links.txt
+[4.230s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/top_level.txt
+[4.236s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/__init__.py
+[4.242s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.cpp
+[4.247s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.py
+[4.253s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.cpp
+[4.259s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.py
+[4.265s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_bulk_read.cpp
+[4.271s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_sync_read.cpp
+[4.277s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_handler.cpp
+[4.283s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.cpp
+[4.290s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.py
+[4.296s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.cpp
+[4.302s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.py
+[4.309s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.cpp
+[4.314s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.py
+[4.320s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.cpp
+[4.325s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.py
+[4.331s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_arduino.cpp
+[4.337s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_linux.cpp
+[4.343s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_mac.cpp
+[4.348s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_windows.cpp
+[4.354s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.cpp
+[4.359s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.py
+[4.365s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.cpp
+[4.372s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.py
+[4.378s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/robotis_def.py
+[4.383s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/PKG-INFO
+[4.390s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/SOURCES.txt
+[4.395s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/dependency_links.txt
+[4.403s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/top_level.txt
+[4.409s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/__init__.py
+[4.414s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.cpp
+[4.423s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.py
+[4.430s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.cpp
+[4.437s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.py
+[4.442s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/data_types.py
+[4.449s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.cpp
+[4.454s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.py
+[4.460s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.cpp
+[4.465s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.py
+[4.470s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.cpp
+[4.476s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.py
+[4.482s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[4.488s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[4.495s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[4.502s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[4.508s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[4.515s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[4.522s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[4.527s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[4.534s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[4.541s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[4.546s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[4.554s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[4.560s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[4.566s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[4.572s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_targets-extras.cmake
+[4.577s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.583s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[4.588s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[4.594s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[4.600s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[4.606s] -- Installing: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[4.651s] Listing '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk'...
+[4.651s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/__init__.py'...
+[4.651s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.py'...
+[4.651s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.py'...
+[4.652s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.py'...
+[4.652s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.py'...
+[4.652s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.py'...
+[4.652s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.py'...
+[4.652s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.py'...
+[4.652s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.py'...
+[4.652s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/robotis_def.py'...
+[4.686s] Listing '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk'...
+[4.686s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/__init__.py'...
+[4.686s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.py'...
+[4.687s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.py'...
+[4.687s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/data_types.py'...
+[4.687s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.py'...
+[4.687s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.py'...
+[4.687s] Compiling '/home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.py'...
+[4.690s] -- Installing: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake
+[4.690s] -- Installing: /home/sunny/robotics/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake
+[4.692s] Invoked command in '/home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake --install /home/sunny/robotics/turtlebot3_ws/build/dynamixel_sdk

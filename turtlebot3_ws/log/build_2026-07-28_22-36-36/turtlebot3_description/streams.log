@@ -1,0 +1,58 @@
+[0.034s] Invoking command in '/home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake /home/sunny/robotics/turtlebot3_ws/src/turtlebot3/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description
+[0.216s] -- The C compiler identification is GNU 13.3.0
+[0.797s] -- The CXX compiler identification is GNU 13.3.0
+[1.349s] -- Detecting C compiler ABI info
+[1.629s] -- Detecting C compiler ABI info - done
+[1.636s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.636s] -- Detecting C compile features
+[1.637s] -- Detecting C compile features - done
+[1.731s] -- Detecting CXX compiler ABI info
+[1.976s] -- Detecting CXX compiler ABI info - done
+[1.985s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.985s] -- Detecting CXX compile features
+[1.986s] -- Detecting CXX compile features - done
+[1.989s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.124s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.192s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.228s] -- Found urdf: 2.10.1 (/opt/ros/jazzy/share/urdf/cmake)
+[2.478s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[2.678s] -- Configuring done (2.6s)
+[2.685s] -- Generating done (0.0s)
+[2.685s] -- Build files have been written to: /home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description
+[2.699s] Invoked command in '/home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake /home/sunny/robotics/turtlebot3_ws/src/turtlebot3/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description
+[2.700s] Invoking command in '/home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake --build /home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description -- -j20 -l20
+[2.758s] Invoked command in '/home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake --build /home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description -- -j20 -l20
+[2.759s] Invoking command in '/home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake --install /home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description
+[2.770s] -- Install configuration: ""
+[2.770s] -- Execute custom install script
+[2.772s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/burger_base.stl
+[2.781s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_base.stl
+[2.791s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_pi_base.stl
+[2.801s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.dae
+[2.812s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.jpg
+[2.822s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/lds.stl
+[2.834s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.dae
+[2.842s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.jpg
+[2.850s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/left_tire.stl
+[2.860s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/right_tire.stl
+[2.869s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/rviz/model.rviz
+[2.878s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/common_properties.urdf
+[2.888s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf
+[2.895s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle.urdf
+[2.902s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf
+[2.912s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/ament_index/resource_index/package_run_dependencies/turtlebot3_description
+[2.921s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/ament_index/resource_index/parent_prefix_path/turtlebot3_description
+[2.931s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.sh
+[2.940s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.dsv
+[2.948s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.sh
+[2.956s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.dsv
+[2.963s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.bash
+[2.971s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.sh
+[2.980s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.zsh
+[2.987s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.dsv
+[2.996s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.dsv
+[3.004s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/ament_index/resource_index/packages/turtlebot3_description
+[3.014s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig.cmake
+[3.021s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig-version.cmake
+[3.028s] -- Symlinking: /home/sunny/robotics/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.xml
+[3.039s] Invoked command in '/home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_teleop:/home/sunny/robotics/turtlebot3_ws/install/turtlebot3_example:/home/sunny/robotics/turtlebot3_ws/install/slam:/opt/ros/jazzy /usr/bin/cmake --install /home/sunny/robotics/turtlebot3_ws/build/turtlebot3_description

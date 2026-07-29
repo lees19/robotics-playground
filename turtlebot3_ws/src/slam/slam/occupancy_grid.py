@@ -1,5 +1,7 @@
 import numpy as np
-from .robot_pose import RobotPose
+
+# from .robot_pose import RobotPose
+from geometry_msgs.msg import TransformStamped
 from nav_msgs.msg import OccupancyGrid
 
 
@@ -76,12 +78,10 @@ class OccupancyGridMapper:
 
         return cells
 
-    def update_grid(self, robot_pose: RobotPose, world_points: np.ndarray):
-        grid_points = self.world_to_grid(world_points)
+    def update_grid(self, pose: np.ndarray, scan_world: np.ndarray):
+        grid_points = self.world_to_grid(scan_world)
 
-        robot_cell = self.world_to_grid(
-            np.array([robot_pose.robot_x, robot_pose.robot_y])
-        )
+        robot_cell = self.world_to_grid(pose[:2, 2])
 
         for obstacle in grid_points:
             # free cells

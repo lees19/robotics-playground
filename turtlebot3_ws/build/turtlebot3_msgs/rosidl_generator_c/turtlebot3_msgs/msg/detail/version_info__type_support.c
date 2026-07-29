@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "turtlebot3_msgs/msg/detail/version_info__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "turtlebot3_msgs/msg/detail/version_info__struct.h"
+#include "turtlebot3_msgs/msg/detail/version_info__functions.h"
 #include "turtlebot3_msgs/msg/detail/version_info__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

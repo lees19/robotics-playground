@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h"
 #include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h"
+#include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -6,6 +6,7 @@ slam/__init__.py
 slam/lidar_processor.py
 slam/occupancy_grid.py
 slam/robot_pose.py
+slam/scan_matching.py
 slam/slam_node.py
 slam/test.py
 slam/transform.py

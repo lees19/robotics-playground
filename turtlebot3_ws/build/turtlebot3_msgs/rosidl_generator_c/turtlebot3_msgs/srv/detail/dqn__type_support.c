@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "turtlebot3_msgs/srv/detail/dqn__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "turtlebot3_msgs/srv/detail/dqn__type_support.h"
 #include "turtlebot3_msgs/srv/detail/dqn__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

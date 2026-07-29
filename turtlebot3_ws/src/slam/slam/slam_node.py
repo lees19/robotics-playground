@@ -3,68 +3,118 @@ import rclpy
 from nav_msgs.msg import OccupancyGrid, Odometry
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
-from visualization_msgs.msg import Marker
+# from visualization_msgs.msg import Marker
 
 from .lidar_processor import LidarProcessor
 from .occupancy_grid import OccupancyGridMapper
-from .robot_pose import RobotPose
+from .scan_matching import ICP
+# from .robot_pose import RobotPose
+
+from tf2_ros import Buffer, TransformListener
+from rclpy.duration import Duration
+from geometry_msgs.msg import TransformStamped
 
 
 class SlamNode(Node):
     def __init__(self):
         super().__init__("slam_node")
         self.lidar = LidarProcessor()
-        self.robot_pose = RobotPose()
+        # self.robot_pose = RobotPose()
+        self.scan_match = ICP()
         self.occupancy_grid = OccupancyGridMapper()
-        self.get_logger().info(
-            f"robot: {self.robot_pose.robot_x}, {self.robot_pose.robot_y}"
-        )
         self.lidar_sub = self.create_subscription(
             LaserScan, "/scan", self.scan_callback, 10
         )
-        self.odom_sub = self.create_subscription(
-            Odometry, "/odom", self.odom_callback, 10
-        )
         self.map_pub = self.create_publisher(OccupancyGrid, "/map", 10)
-
-        self.marker_pub = self.create_publisher(Marker, "/scan_points", 10)
-        from tf2_ros import Buffer, TransformListener
 
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
 
-    def scan_callback(self, msg: LaserScan):
-        robot_points = self.lidar.process_scan(msg)
-        world_points = self.robot_to_world(robot_points)
-        self.occupancy_grid.update_grid(self.robot_pose, world_points)
+        self.pose = np.eye(3)
+        self.prev_odom = None
 
+    def scan_callback(self, msg: LaserScan):
+        scan_robot = self.lidar.process_scan(msg)
+
+        # Keep track using own Odometry pose
+        # world_points = self.robot_to_world(robot_points)
+
+        # Use TF2 for odometry transform
+        try:
+            transform = self.tf_buffer.lookup_transform(
+                target_frame="odom",
+                source_frame=msg.header.frame_id,
+                time=msg.header.stamp,
+                timeout=Duration(seconds=0.1),
+            )
+        except Exception as e:
+            self.get_logger().warn(str(e))
+            return
+
+        # predicted odometry pose
+        T_odom = self.tf_to_matrix(transform)
+
+        if self.prev_odom is None:
+            self.pose = T_odom
+            scan_world = self.transform_points(scan_robot, self.pose)
+            self.scan_match.prev_scan_world = scan_world
+            self.prev_odom = T_odom
+            self.occupancy_grid.create_occupancy_map(self.pose, scan_world)
+            return
+
+        # Not sure exactly why this is important yet
+        T_motion = np.linalg.inv(self.prev_odom) @ T_odom
+        T_pred = self.pose @ T_motion  # predcted pose from odom data
+        scan_pred = self.transform_points(scan_robot, T_pred)
+
+        # T_icp = self.scan_match.align(scan_pred)
+        # self.pose = T_icp @ T_pred # update the pose with movement from odom
+        # scan_world = self.transform_points(scan_robot, self.pose) # transform with updated pose
+
+        # predicted pose
+        scan_world = self.transform_points(scan_robot, T_odom)
+
+        self.occupancy_grid.update_grid(T_odom, scan_world)
         map = self.occupancy_grid.create_occupancy_map(
-            frame_id="odom", stamp=self.get_clock().now().to_msg()
+            frame_id="odom", stamp=msg.header.stamp
         )
         self.map_pub.publish(map)
-
-        # marker = self.lidar.point_to_marker(
-        #     points=world_points, frame_id="odom", stamp=self.get_clock().now().to_msg()
-        # )
-        # self.marker_pub.publish(marker)
 
     def odom_callback(self, msg: Odometry):
         self.robot_pose.update(msg)
 
-    def robot_to_world(self, points: np.ndarray):
-        cos_theta = np.cos(self.robot_pose.robot_yaw)
-        sin_theta = np.sin(self.robot_pose.robot_yaw)
+    def tf_to_matrix(self, transform: TransformStamped):
 
-        R = np.array([[cos_theta, -sin_theta], [sin_theta, cos_theta]])
+        q = transform.transform.rotation
 
-        world_points = (R @ points.T).T
-        world_points[:, 0] += self.robot_pose.robot_x
-        world_points[:, 1] += self.robot_pose.robot_y
+        yaw = np.arctan2(
+            2.0 * (q.w * q.z + q.x * q.y), 1.0 - 2.0 * (q.y * q.y + q.z * q.z)
+        )
 
-        return world_points
+        c = np.cos(yaw)
+        s = np.sin(yaw)
+
+        T = np.eye(3)
+
+        T[:2, :2] = np.array([[c, -s], [s, c]])
+
+        T[:2, 2] = [
+            transform.transform.translation.x,
+            transform.transform.translation.y,
+        ]
+
+        return T
+
+    def transform_points(self, points, T):
+        ones = np.ones((points.shape[0], 1))
+        points_h = np.hstack([points, ones])
+        transformed = (T @ points_h.T).T
+
+        return transformed[:, :2]
 
 
 def main():
+
     rclpy.init()
 
     node = SlamNode()
