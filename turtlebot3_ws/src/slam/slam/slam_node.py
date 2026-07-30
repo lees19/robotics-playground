@@ -1,18 +1,18 @@
 import numpy as np
 import rclpy
+from geometry_msgs.msg import TransformStamped
 from nav_msgs.msg import OccupancyGrid, Odometry
+from rclpy.duration import Duration
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
-# from visualization_msgs.msg import Marker
 
+# from .robot_pose import RobotPose
+from tf2_ros import Buffer, TransformListener
+
+# from visualization_msgs.msg import Marker
 from .lidar_processor import LidarProcessor
 from .occupancy_grid import OccupancyGridMapper
 from .scan_matching import ICP
-# from .robot_pose import RobotPose
-
-from tf2_ros import Buffer, TransformListener
-from rclpy.duration import Duration
-from geometry_msgs.msg import TransformStamped
 
 
 class SlamNode(Node):
@@ -23,9 +23,9 @@ class SlamNode(Node):
         self.scan_match = ICP()
         self.occupancy_grid = OccupancyGridMapper()
         self.lidar_sub = self.create_subscription(
-            LaserScan, "/scan", self.scan_callback, 10
+            LaserScan, "/scan", self.scan_callback, 1
         )
-        self.map_pub = self.create_publisher(OccupancyGrid, "/map", 10)
+        self.map_pub = self.create_publisher(OccupancyGrid, "/map", 1)
 
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
@@ -64,10 +64,9 @@ class SlamNode(Node):
 
         # Not sure exactly why this is important yet
         T_motion = np.linalg.inv(self.prev_odom) @ T_odom
-        T_pred = self.pose @ T_motion  # predcted pose from odom data
-        scan_pred = self.transform_points(scan_robot, T_pred)
+        scan_pred = self.transform_points(scan_robot, T_motion)
+        T_icp = self.scan_match.align(scan_pred)
 
-        # T_icp = self.scan_match.align(scan_pred)
         # self.pose = T_icp @ T_pred # update the pose with movement from odom
         # scan_world = self.transform_points(scan_robot, self.pose) # transform with updated pose
 
@@ -84,20 +83,15 @@ class SlamNode(Node):
         self.robot_pose.update(msg)
 
     def tf_to_matrix(self, transform: TransformStamped):
-
         q = transform.transform.rotation
-
         yaw = np.arctan2(
             2.0 * (q.w * q.z + q.x * q.y), 1.0 - 2.0 * (q.y * q.y + q.z * q.z)
         )
-
         c = np.cos(yaw)
         s = np.sin(yaw)
 
         T = np.eye(3)
-
         T[:2, :2] = np.array([[c, -s], [s, c]])
-
         T[:2, 2] = [
             transform.transform.translation.x,
             transform.transform.translation.y,
