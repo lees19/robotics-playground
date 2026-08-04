@@ -54,26 +54,14 @@ class SlamNode(Node):
         # predicted odometry pose
         T_odom = self.tf_to_matrix(transform)
 
-        if self.prev_odom is None:
-            self.pose = T_odom
-            scan_world = self.transform_points(scan_robot, self.pose)
-            self.scan_match.prev_scan_world = scan_world
-            self.prev_odom = T_odom
-            self.occupancy_grid.create_occupancy_map(self.pose, scan_world)
-            return
-
         # Not sure exactly why this is important yet
-        T_motion = np.linalg.inv(self.prev_odom) @ T_odom
-        scan_pred = self.transform_points(scan_robot, T_motion)
-        T_icp = self.scan_match.align(scan_pred)
-
-        # self.pose = T_icp @ T_pred # update the pose with movement from odom
-        # scan_world = self.transform_points(scan_robot, self.pose) # transform with updated pose
+        T_icp = self.scan_match.align(scan_robot, T_odom)
+        self.pose = self.pose @ T_icp
 
         # predicted pose
-        scan_world = self.transform_points(scan_robot, T_odom)
+        scan_world = self.transform_points(scan_robot, self.pose)
 
-        self.occupancy_grid.update_grid(T_odom, scan_world)
+        self.occupancy_grid.update_grid(self.pose, scan_world)
         map = self.occupancy_grid.create_occupancy_map(
             frame_id="odom", stamp=msg.header.stamp
         )
